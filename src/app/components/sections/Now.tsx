@@ -11,11 +11,11 @@ export default function About({ now }: NowProps) {
             <h2>Now</h2>
             <div className="flex flex-col">
                 <p>I am building&nbsp;
-                    <Link href="#" className='underline text-zinc-800 dark:text-zinc-400'>
+                    <Link href="#" className="underline text-zinc-800 dark:text-zinc-400">
                     Testimonials
                     </Link>
-                    &nbsp;a feedback app that let's you collect reviews in text, video and image formats. The&nbsp;
-                    <Link href="#" className='underline text-zinc-800 dark:text-zinc-400'>
+                    &nbsp;a feedback app that lets you collect reviews in text, video and image formats. The&nbsp;
+                    <Link href="#" className="underline text-zinc-800 dark:text-zinc-400">
                     Pro Version
                     </Link>
                     &nbsp;includes feature to import your Google & Amazon reviews and share on Shopify.

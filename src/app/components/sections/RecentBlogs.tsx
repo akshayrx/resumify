@@ -24,7 +24,7 @@ interface RecentBlogsProps {
           const recentBlogs = await fetchRecentBlogs(limit); // Use dynamic limit
           setBlogs(recentBlogs);
         } catch (_err) {
-          setError('Unable to load blog posts');
+          setError('Unable to load blog posts due to this: ' + _err);
         } finally {
           setLoading(false);
         }
