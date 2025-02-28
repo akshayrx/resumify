@@ -18,7 +18,7 @@ export default function About({ now }: NowProps) {
                     <Link href="#" className="underline text-zinc-800 dark:text-zinc-400">
                     Pro Version
                     </Link>
-                    &nbsp;includes feature to import your Google & Amazon reviews and share on Shopify.
+                    &nbsp;includes feature to import your Google & Amazon reviews to share on Shopify store with our plugin.
                 </p>
             </div>
             <p>{now.cta}</p>

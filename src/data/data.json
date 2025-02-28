@@ -13,56 +13,76 @@
     },
     "now": {
         "status": "this is a statement",
-        "cta": "I work as a freelance developer for startups to create customised AI & SaaS products. I also do consulting for businesses & brands to create new or improve existing websites, web apps with AI."
+        "cta": "And I work as a freelance developer for startups to create customised AI & SaaS products."
     },
     "skills": [
       {
         "category": "Frontend",
-        "items": ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript"]
+        "items": ["React.js", "Next.js", "JavaScript", "TypeScript", "Tailwind", "ShadCn"]
       },
       {
         "category": "Backend",
         "items": ["Node.js", "Express", "MongoDB", "REST APIs"]
       },
       {
-        "category": "Tools",
-        "items": ["Git", "Vercel", "Docker", "VS Code"]
+        "category": "Development",
+        "items": ["Git", "GitHub", "Vercel", "AWS", "Replit"]
+      },
+      {
+        "category": "UI/UX Design",
+        "items": ["Figma"]
+      },
+      {
+        "category": "AI & Machine Learning",
+        "items": ["Grok", "OpenAI", "Gemini"]
       }
     ],
     "workExperience": [
       {
-        "title": "Frontend Developer",
-        "company": "TechCorp",
+        "title": "Tech Lead",
+        "company": "Interaktive AI",
         "location": "Remote",
-        "startDate": "Jan 2022",
+        "startDate": "Nov 2024",
         "endDate": "Present",
         "responsibilities": [
-          "Developed responsive web applications using React and Next.js.",
-          "Collaborated with designers to implement pixel-perfect UI.",
-          "Optimized performance, reducing load times by 20%."
+          "I lead the team to engineer & create an AI Agent for improving Meta & Google ad performance ROI for businesses.",
+          "Collaborated with designers to create pixel-perfect UI.",
+          "Helped the founding team to test Beta version for initial few customers, now creating a full-stack app for same."
         ]
       },
       {
-        "title": "Junior Web Developer",
-        "company": "StartUp Inc.",
-        "location": "New York, NY",
-        "startDate": "Jun 2020",
-        "endDate": "Dec 2021",
+        "title": "AI Agents Developer",
+        "company": "Freelance",
+        "location": "Remote",
+        "startDate": "Oct 2023",
+        "endDate": "Present",
         "responsibilities": [
-          "Built RESTful APIs with Node.js and Express.",
-          "Integrated third-party services like Stripe for payments.",
-          "Maintained and updated legacy codebases."
+          "I create customised AI voice interfaces & chatbots, leveraging advanced AI tools and workflow automations for seamless user experiences.",
+          "I design, develop, and deploy scalable solutions tailored to client needs.",
+          "Available for long-term work."
+        ]
+      },
+      {
+        "title": "Frontend Developer",
+        "company": "Freelance",
+        "location": "Remote",
+        "startDate": "Feb 2016",
+        "endDate": "Present",
+        "responsibilities": [
+          "I specialise in creating Software as a Service (SaaS) applications, I build engaging, responsive web apps using modern frameworks like Next.js.",
+          "I like to create high-performance, accessible web applications that meet diverse project goals.",
+          "Available for long-term work."
         ]
       }
     ],
     "projects": [
       {
-        "title": "Portfolio Website",
-        "description": "A personal portfolio built with Next.js and deployed on Vercel, showcasing my skills and projects.",
+        "title": "Interaktive AI Solutions",
+        "description": "Customised AI Sales Agent to help businesses make higher ROI on Meta & Google ad campaigns.",
         "techStack": ["Next.js", "Tailwind CSS", "Vercel"],
-        "github": "https://github.com/johndoe/portfolio",
-        "liveUrl": "https://portfolio-johndoe.vercel.app",
-        "coverImage": "/mockproject.png",
+        "github": "https://github.com/akshayrx",
+        "liveUrl": "https://interaktiveai.com",
+        "coverImage": "/img/interaktive-ad-campaign.png",
         "category": "website"
       },
       {
@@ -77,18 +97,32 @@
     ],
     "certificates": [
       {
-        "title": "Full-Stack Web Development",
-        "issuer": "Coursera",
+        "title": "Full-Stack Web Development Bootcamp",
+        "issuer": "Udemy, Angela Yu",
         "date": "Aug 2021",
         "credentialUrl": "https://coursera.org/verify/fullstack-johndoe",
         "category": "Programming"
       },
       {
-        "title": "AWS Certified Developer",
-        "issuer": "Amazon Web Services",
+        "title": "Web Development Fundamentals",
+        "issuer": "IBM",
         "date": "Mar 2023",
         "credentialUrl": "https://aws.amazon.com/verification/johndoe",
-        "category": "Development"
+        "category": "Programming"
+      },
+      {
+        "title": "Customer Service Essentials",
+        "issuer": "Fiverr Learning",
+        "date": "Mar 2023",
+        "credentialUrl": "https://aws.amazon.com/verification/johndoe",
+        "category": "Customer Service"
+      },
+      {
+        "title": "UI/UX Fundamentals",
+        "issuer": "IBM",
+        "date": "Mar 2023",
+        "credentialUrl": "https://aws.amazon.com/verification/johndoe",
+        "category": "UI/UX Design"
       }
     ]
   }

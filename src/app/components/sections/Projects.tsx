@@ -19,11 +19,11 @@ export default function Project({ projects }: ProjectProps) {
     return (
         <section>
             <h2>Featured Projects</h2>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-2">
                 {allProjects.map((featured, index) => (
                     <div key={index} className='flex flex-col gap-2 rounded-lg'>
                         <Image
-                            src="/mockproject.png"
+                            src={featured.coverImage}
                             alt={featured.title}
                             width={300}
                             height={180}
@@ -31,12 +31,15 @@ export default function Project({ projects }: ProjectProps) {
                             loading="lazy"
                         />
                         <Link
-                            href={`projects/${featured.category.toLowerCase()}/${featured.title.toLowerCase().replace(/ /g, '-')}`}
+                            // href={`projects/${featured.category.toLowerCase()}/${featured.title.toLowerCase().replace(/ /g, '-')}`}
+                            href={featured.liveUrl}
+                            target="_blank"
                             className="block transition-transform"
                         >
                             <div className="flex flex-col gap-0">
                                 <h4>{featured.title}</h4>
-                                <small>{featured.techStack.join(', ')}</small>
+                                {/* <small>{featured.techStack.join(', ')}</small> */}
+                                <small>{featured.description}</small>
                             </div>
                         </Link>
                     </div>
