@@ -6,6 +6,9 @@ export interface AboutMe {
     email: string;
     linkedin: string;
     github: string;
+    instagram: string;
+    twitter: string;
+    whatsapp: string;
   }
   
   export interface Now {

@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getPortfolioData } from '../../lib/getPortfolioData'; // Use centralized data fetch
 
-
 interface Project {
   id: number;
   projectName: string;

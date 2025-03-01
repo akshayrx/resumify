@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "next-themes";
+import Connect from '@/app/components/sections/Connect';
+import { getPortfolioData } from '@/lib/getPortfolioData';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,11 +44,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const data = await getPortfolioData();
+  const aboutMe = data.aboutMe;
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -56,6 +61,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <Header />
           {children}
+          <Connect aboutMe={data.aboutMe} />
           <Footer />
         </ThemeProvider>
         </div>

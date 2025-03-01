@@ -67,6 +67,7 @@ export default async function ProjectPage({
   return (
     <main>
       <section>
+      <BackToPage href="/projects" linkText="Back to Projects" />
         <div className="mb-6 overflow-hidden rounded-lg">
           <Image
             src={project.image}
@@ -93,7 +94,6 @@ export default async function ProjectPage({
           Visit Live Site
         </Link>
       </section>
-      <BackToPage href="/projects" linkText="Back to Projects" />
     </main>
   );
 }

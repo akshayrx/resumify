@@ -12,7 +12,7 @@ interface BackToPageProps {
 function BackToPage({ href, linkText = 'https://akshay.ing' }: BackToPageProps) {
   return (
     <>
-      <div className="flex items-center justify-between w-full pb-8">
+      <div className="flex items-center justify-between w-full pb-6">
         <div className="cursor-pointer">
           <Link href={href} prefetch={false} className="underline text-zinc-500 dark:text-zinc-500">
             {linkText}
