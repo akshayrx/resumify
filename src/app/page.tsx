@@ -9,6 +9,7 @@ import Now from './components/sections/Now';
 import Certificate from './components/sections/Certificates';
 import { PortfolioData } from '../types/data';
 import RecentBlogs from './components/sections/RecentBlogs';
+import { Metadata } from 'next';
 
 async function getData(): Promise<PortfolioData> {
   const filePath = join(process.cwd(), 'src', 'data', 'data.json');
@@ -16,11 +17,17 @@ async function getData(): Promise<PortfolioData> {
   return JSON.parse(jsonData);
 }
 
+export const metadata: Metadata = {
+  title: "Portfolio | Akshay Ravikant",
+  description:
+    "Akshay Ravikant’s portfolio hub featuring MVP for startups, SaaS development, and AI agents development projects. Check out my latest tech and AI blogs.",
+};
+
 export default async function Home() {
   const data = await getData();
 
   return (
-    <main className='flex flex-col gap-20 w-full px-4 pt-14'>
+    <main>
       <About aboutMe={data.aboutMe} />
       <Now now={data.now} />
       <Project projects={data.projects} />

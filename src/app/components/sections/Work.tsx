@@ -15,7 +15,7 @@ export default function Work({ workExperience }: WorkProps) {
                         <h4>{job.title} at {job.company}</h4>
                         <small>{job.location}, {job.startDate} - {job.endDate}</small>
                     </div>
-                    <small>{job.responsibilities.join(" ")}</small>
+                    <p className='mb-4'>{job.responsibilities.join(" ")}</p>
                 </div>
             ))}
         </section>

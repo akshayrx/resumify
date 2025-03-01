@@ -11,7 +11,7 @@ export default function Certificate({ certificates }: CertificateProps) {
             {certificates.map((learning, index) => (
                 <div key={index} className='flex flex-col gap-0'>
                     <h4>{learning.title}</h4>
-                    <small>{learning.issuer}</small>
+                    <p>{learning.issuer}</p>
                 </div>
             ))}
         </section>

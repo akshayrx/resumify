@@ -83,7 +83,18 @@
         "github": "https://github.com/akshayrx",
         "liveUrl": "https://interaktiveai.com",
         "coverImage": "/img/interaktive-ad-campaign.png",
-        "category": "website"
+        "category": "Website",
+        "id": 1
+      },
+      {
+        "title": "ARX",
+        "description": "B2B marketplace for jewellery manufacturers, wholesalers and retailers in India.",
+        "techStack": ["Next.js", "Tailwind CSS", "Vercel"],
+        "github": "https://github.com/akshayrx",
+        "liveUrl": "https://interaktiveai.com",
+        "coverImage": "/img/interaktive-ad-campaign.png",
+        "category": "SaaS",
+        "id": 10
       },
       {
         "title": "Task Manager App",
@@ -92,7 +103,18 @@
         "github": "https://github.com/johndoe/task-manager",
         "liveUrl": "https://task-manager-johndoe.vercel.app",
         "coverImage": "/mockproject.png",
-        "category": "saas"
+        "category": "SaaS",
+        "id": 2
+      },
+      {
+        "title": "AI Chatbot",
+        "description": "An AI-powered chatbot for customer support.",
+        "techStack": ["Python", "TensorFlow", "Next.js"],
+        "github": "https://github.com/your-username/ai-chatbot",
+        "liveUrl": "https://ai-chatbot-yourname.vercel.app",
+        "coverImage": "/mockproject.png",
+        "category": "AI Agents",
+        "id": 3
       }
     ],
     "certificates": [

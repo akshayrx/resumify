@@ -134,7 +134,7 @@
     @apply text-lg font-medium text-zinc-900 dark:text-zinc-100
   }
   h4 {
-    @apply text-base font-mono text-zinc-900 dark:text-zinc-100
+    @apply text-base font-medium text-zinc-900 dark:text-zinc-300
   }
   p {
     @apply text-base font-normal text-zinc-700 dark:text-zinc-500
@@ -145,4 +145,11 @@
   section {
     @apply flex flex-col gap-4
   }
+  main {
+    @apply flex flex-col gap-20 w-full px-4 pt-14
+  }
+}
+
+.wp-block-heading {
+  @apply mt-8
 }
