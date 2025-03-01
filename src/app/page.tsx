@@ -2,7 +2,7 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import About from './components/sections/About';
-import Connect from './components/sections/Connect';
+// import Connect from './components/sections/Connect';
 import Work from './components/sections/Work';
 import Skills from './components/sections/Skills';
 import Project from './components/sections/Projects';
@@ -36,7 +36,6 @@ export default async function Home() {
       <Work workExperience={data.workExperience} />
       <Certificate certificates={data.certificates} />
       <RecentBlogs />
-      <Connect aboutMe={data.aboutMe} />
     </main>
   );
 }
