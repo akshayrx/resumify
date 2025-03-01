@@ -4,15 +4,15 @@ import Link from 'next/link';
 import { getPortfolioData } from '../../../../lib/getPortfolioData';
 import BackToPage from '@/app/components/snippets/BackToPage';
 
-interface Project {
-  id: number;
-  title: string;
-  category: string;
-  description: string;
-  techStack: string;
-  liveUrl: string;
-  image: string;
-}
+// interface Project {
+//   id: number;
+//   title: string;
+//   category: string;
+//   description: string;
+//   techStack: string;
+//   liveUrl: string;
+//   image: string;
+// }
 
 export async function generateMetadata({
   params,

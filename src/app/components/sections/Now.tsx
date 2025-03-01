@@ -24,10 +24,9 @@ export default function About({ now }: NowProps) {
                     <Link href="https://start.akshay.ing" target="_blank" className="underline text-zinc-800 dark:text-zinc-400">
                     businesses & startups
                     </Link>
-                    &nbsp;to create customised AI Agents & SaaS products.
+                    &nbsp;{now.cta}
                 </p>
             </div>
-            {/* <p>{now.cta}</p> */}
         </section>
     );
 }
