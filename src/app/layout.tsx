@@ -50,7 +50,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const data = await getPortfolioData();
-  const aboutMe = data.aboutMe;
+  //const aboutMe = data.aboutMe;
 
   return (
     <html lang="en" suppressHydrationWarning>
