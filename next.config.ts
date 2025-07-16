@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'unitechinternet.in',
+        hostname: 'blog.akshay.ing',
         pathname: '/wp-content/uploads/**', // Optional: restricts to uploads folder
       },
     ],

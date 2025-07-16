@@ -1,13 +1,13 @@
 {
     "aboutMe": {
-      "name": "John Doe",
+      "name": "Akshay Ravikant",
       "title": "Full-Stack Developer",
       "bio": [
         "A programmer with a passion for coding and problem-solving. Hi, my name is Akshay, my focus is on creating accessible tech products that impacts people beyond social and economic barrier.",
         "I am a self-taught developer with a strong foundation in JavaScript, ReactJs, and NextJs. I am proficient in working with modern AI tools and technologies to build scalable and efficient web applications that provides real-world solutions.",
         "I specialise in creating AI-driven voice & chat interface, and software as a service (SaaS) applications."
       ],
-      "email": "start@akshay.ing",
+      "email": "hello.arxports@gmail.com",
       "linkedin": "https://linkedin.com/in/akshayravikant",
       "github": "https://github.com/akshayrx",
       "instagram": "https://instagram.com/akshayravikant_",
@@ -21,15 +21,19 @@
     "skills": [
       {
         "category": "Frontend",
-        "items": ["React.js", "Next.js", "JavaScript", "TypeScript", "Tailwind", "ShadCn"]
+        "items": ["React.js", "JavaScript", "TypeScript", "Tailwind", "ShadCn"]
       },
       {
         "category": "Backend",
-        "items": ["Node.js", "Express", "MongoDB", "REST APIs"]
+        "items": ["Next.js", "Node.js", "Express", "REST APIs"]
       },
       {
-        "category": "Development",
-        "items": ["Git", "GitHub", "Vercel", "AWS", "Replit"]
+        "category": "Database",
+        "items": ["MongoDB", "PostgreSQL", "MySQL", "Supabase"]
+      },
+      {
+        "category": "DevOps & Deployment",
+        "items": ["Git", "GitHub", "Docker", "Vercel", "AWS", "Replit"]
       },
       {
         "category": "UI/UX Design",
@@ -37,87 +41,121 @@
       },
       {
         "category": "AI & Machine Learning",
-        "items": ["Grok", "OpenAI", "Gemini"]
+        "items": ["Ollama", "Anthropic", "OpenAI", "Gemini"]
+      },
+      {
+        "category": "Other Languages/Tools",
+        "items": ["Framer", "Shopify", "Liquid", "PHP", "Python"]
+      },
+      {
+        "category": "Soft Skills",
+        "items": ["Problem Solving", "Team Collaboration", "Communication", "Adaptability"]
+      },
+      {
+        "category": "Automation & Workflow",
+        "items": ["n8n", "Make"]
       }
     ],
     "workExperience": [
       {
-        "title": "Tech Lead",
-        "company": "Interaktive AI",
-        "location": "Remote",
-        "startDate": "Nov 2024",
-        "endDate": "Present",
-        "responsibilities": [
-          "I lead the team to engineer & create an AI Agent for improving Meta & Google ad performance ROI for businesses.",
-          "Collaborated with designers to create pixel-perfect UI.",
-          "Helped the founding team to test Beta version for initial few customers, now creating a full-stack app for same."
-        ]
+      "title": "Full-Stack Developer",
+      "company": "Freelance",
+      "location": "Remote",
+      "startDate": "Oct 2023",
+      "endDate": "Present",
+      "responsibilities": [
+        "Developing SaaS applications with tech stack including TypeScript, JavaScript, React.js, Next.js, & more.",
+        "Integrating AI tools and APIs to create intelligent, responsive application experiences.",
+        "Building voice interfaces, chatbots, and SaaS platforms with focus on security, & scalability."
+      ]
       },
       {
-        "title": "AI Agents Developer",
-        "company": "Freelance",
-        "location": "Remote",
-        "startDate": "Oct 2023",
-        "endDate": "Present",
-        "responsibilities": [
-          "I create customised AI voice interfaces & chatbots, leveraging advanced AI tools and workflow automations for seamless user experiences.",
-          "I design, develop, and deploy scalable solutions tailored to client needs.",
-          "Available for long-term work."
-        ]
+      "title": "Web Developer",
+      "company": "Freelance",
+      "location": "Remote",
+      "startDate": "Feb 2016",
+      "endDate": "Present",
+      "responsibilities": [
+        "Developing better performing e-commerce & business websites, with platforms like Shopify, Framer, & WordPress",
+        "Building high-performance, accessible web applications to meet modern project requirements.",
+        "Implementing interactive UIs with focus on usability, performance and cross-browser compatibility."
+      ]
       },
       {
-        "title": "Frontend Developer",
-        "company": "Freelance",
-        "location": "Remote",
-        "startDate": "Feb 2016",
-        "endDate": "Present",
-        "responsibilities": [
-          "I specialise in creating Software as a Service (SaaS) applications, I build engaging, responsive web apps using modern frameworks like Next.js.",
-          "I like to create high-performance, accessible web applications that meet diverse project goals.",
-          "Available for long-term work."
-        ]
+      "title": "Tech Lead",
+      "company": "Interaktive AI",
+      "location": "Remote",
+      "startDate": "Nov 2024",
+      "endDate": "Mar 2025",
+      "responsibilities": [
+        "Led the team in engineering an AI Agent to improve Meta & Google ad performance ROI for businesses.",
+        "Collaborated with designers to create pixel-perfect UI implementations.",
+        "Supported the founding team in beta testing with initial customers and developed full-stack application."
+      ]
+      },
+      {
+      "title": "AI Agents Developer",
+      "company": "Freelance",
+      "location": "Remote",
+      "startDate": "Oct 2023",
+      "endDate": "Present",
+      "responsibilities": [
+        "Create customized AI voice interfaces and chatbots using advanced AI tools and workflow automations.",
+        "Design and deploy scalable solutions tailored to specific client requirements and business needs.",
+        "Deliver end-to-end AI integration services from concept to implementation and maintenance."
+      ]
       }
     ],
     "projects": [
       {
         "title": "Interaktive AI Solutions",
         "description": "Customised AI Sales Agent to help businesses make higher ROI on Meta & Google ad campaigns.",
-        "techStack": ["Next.js", "Tailwind CSS", "Vercel"],
+        "techStack": ["Framer", "React", "TypeScript"],
         "github": "https://github.com/akshayrx",
         "liveUrl": "https://interaktiveai.com",
-        "coverImage": "/img/interaktive-ad-campaign.png",
+        "coverImage": "/projects/app_interaktive.png",
         "category": "Website",
         "id": 1
       },
       {
-        "title": "ARX",
-        "description": "B2B marketplace for jewellery manufacturers, wholesalers and retailers in India.",
-        "techStack": ["Next.js", "Tailwind CSS", "Vercel"],
+        "title": "Bees and Bites Organic Honey",
+        "description": "Built on Shopify, this e-commerce website for a D2C brand Bees & Bites, offers a range of organic honey products.",
+        "techStack": ["Shopify", "Liquid", "JavaScript"],
         "github": "https://github.com/akshayrx",
-        "liveUrl": "https://interaktiveai.com",
-        "coverImage": "/img/interaktive-ad-campaign.png",
-        "category": "SaaS",
+        "liveUrl": "https://beesandbites.com",
+        "coverImage": "/projects/app_beesandbites.png",
+        "category": "Website",
+        "id": 4
+      },
+      {
+        "title": "Texts Dot Com",
+        "description": "A simple yet powerful text counter. Text.com is a web-based tool for word & character counter, convert cases, & other basic typing features.",
+        "techStack": ["React.js", "Tailwind CSS", "GitHub Pages"],
+        "github": "https://github.com/akshayrx",
+        "liveUrl": "https://akshayrx.github.io/texts-dot-com",
+        "coverImage": "/projects/app_textdotcom.png",
+        "category": "Micro SaaS",
         "id": 10
       },
       {
-        "title": "Task Manager App",
-        "description": "A full-stack task management tool with user authentication and real-time updates.",
-        "techStack": ["React", "Node.js", "MongoDB"],
-        "github": "https://github.com/johndoe/task-manager",
-        "liveUrl": "https://task-manager-johndoe.vercel.app",
-        "coverImage": "/mockproject.png",
-        "category": "SaaS",
+        "title": "Currency Converter",
+        "description": "A web-based tool for real-time international currency conversion. Simple, easy, fast. One click to convert.",
+        "techStack": ["React.js", "Tailwind CSS", "Vite", "Vercel"],
+        "github": "https://github.com/akshayrx",
+        "liveUrl": "https://convertercurrency.vercel.app",
+        "coverImage": "/projects/app_currencyconverter.png",
+        "category": "Micro SaaS",
         "id": 2
       },
       {
-        "title": "AI Chatbot",
-        "description": "An AI-powered chatbot for customer support.",
+        "title": "Suprmarket",
+        "description": "It's kind of like Linktree & Shopify combined. It allows you to create a simple storefront with your products, ability to accept UPI payments, and share your SuprLink on social media.",
         "techStack": ["Python", "TensorFlow", "Next.js"],
-        "github": "https://github.com/your-username/ai-chatbot",
-        "liveUrl": "https://ai-chatbot-yourname.vercel.app",
-        "coverImage": "/mockproject.png",
-        "category": "AI Agents",
-        "id": 3
+        "github": "https://github.com/akshayrx",
+        "liveUrl": "https://suprmarket.app",
+        "coverImage": "/projects/app_suprmarket.png",
+        "category": "Full-Stack SaaS",
+        "id": 9
       }
     ],
     "certificates": [
@@ -148,6 +186,13 @@
         "date": "Mar 2023",
         "credentialUrl": "https://aws.amazon.com/verification/johndoe",
         "category": "UI/UX Design"
+      },
+      {
+        "title": "Data Analyst Professional Certificate",
+        "issuer": "Coursera, IBM (Doing Currently)",
+        "date": "Jul 2025",
+        "credentialUrl": "https://aws.amazon.com/verification/johndoe",
+        "category": "Data Analysis"
       }
     ]
   }

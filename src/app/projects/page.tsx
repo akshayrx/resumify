@@ -28,7 +28,7 @@ export default async function ProjectsPage() {
     description: p.description,
     techStack: p.techStack.join(', '),
     liveUrl: p.liveUrl,
-    image: p.coverImage || '/social-share-arx.png', // Default image if missing
+    image: p.coverImage || '/projects/projectmockimg.png', // Default image if missing
   }));
 
   const groupedProjects = projects.reduce((acc: { [key: string]: Project[] }, project) => {

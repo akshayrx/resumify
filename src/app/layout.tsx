@@ -23,26 +23,68 @@ export const metadata: Metadata = {
     template: "%s | Akshay Ravikant", // For dynamic page titles
   },
   description:
-    "Akshay Ravikant’s portfolio hub showcasing MVP for startups, SaaS development, and AI agents development projects. Explore my latest tech and AI blogs for industry updates and new apps.",
+    "Myself Akshay Ravikant, and this is my portfolio & tech blog. This features my recent projects, certifications and basic info for potential clients and employers. Explore my latest tech and AI blogs for industry updates and newly launched SaaS apps.",
   keywords: ["Akshay Ravikant", "mvp for startups", "saas development", "ai agents development", "tech blog", "portfolio"],
-  authors: [{ name: "Akshay Ravikant" }],
+  authors: [{ name: "Akshay Ravikant", url: "https://akshay.ing" }],
+  creator: "Akshay Ravikant",
+  publisher: "Akshay Ravikant",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: "https://akshay.ing",
+    languages: {
+      'en-US': 'https://akshay.ing',
+    },
+  },
   openGraph: {
     title: "Akshay Ravikant | Portfolio & Tech Blog",
     description:
-      "Discover Akshay Ravikant’s projects in MVP for startups, SaaS, and AI agents development, plus tech blogs on industry updates.",
+      "Myself Akshay Ravikant, and this is my portfolio & tech blog. Along with latest updates in the tech industry, this also features my recent projects, and basic info for potential clients and employers.",
     url: "https://akshay.ing",
     siteName: "Akshay Ravikant",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "https://akshay.ing/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Akshay Ravikant Portfolio & Tech Blog",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Akshay Ravikant | Portfolio & Tech Blog",
     description:
-      "Portfolio of Akshay Ravikant featuring MVP for startups, SaaS, and AI agents development, with tech and AI blogs.",
+      "Myself Akshay Ravikant, and this is my portfolio & tech blog. Along with latest updates in the tech industry, this also features my recent projects, and basic info for potential clients and employers.",
     creator: "@akshayravikant",
+    images: ["https://akshay.ing/og-image.png"],
+    site: "@akshayravikant",
   },
-};
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
+  ],
+  category: "technology",
+  metadataBase: new URL('https://akshay.ing'),
+  // verification: {
+  //   google: "verification_token", // Replace with your verification token if you have one
+  // },
+}
 
 export default async function RootLayout({
   children,

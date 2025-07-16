@@ -21,7 +21,7 @@ export interface BlogPost {
   }
   
   export async function fetchRecentBlogs(limit: number = 3): Promise<BlogPost[]> {
-    const res = await fetch(`https://unitechinternet.in/wp-json/wp/v2/posts?per_page=${limit}`, {
+    const res = await fetch(`https://blog.akshay.ing/wp-json/wp/v2/posts?per_page=${limit}`, {
       cache: 'no-store', // fetches everytime on our page load, slightly delayed due to realtime api request to WP everytime, but guarantees fresh data
     });
   
@@ -34,7 +34,7 @@ export interface BlogPost {
   }
 
   export async function fetchPostBySlug(slug: string): Promise<BlogPost> {
-    const res = await fetch(`https://unitechinternet.in/wp-json/wp/v2/posts?slug=${slug}&_embed`, {
+    const res = await fetch(`https://blog.akshay.ing/wp-json/wp/v2/posts?slug=${slug}&_embed`, {
       cache: 'no-store',
     });
     if (!res.ok) {

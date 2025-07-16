@@ -21,7 +21,7 @@ async function getData(): Promise<PortfolioData> {
 export const metadata: Metadata = {
   title: "Portfolio | Akshay Ravikant",
   description:
-    "Akshay Ravikant’s portfolio hub featuring MVP for startups, SaaS development, and AI agents development projects. Check out my latest tech and AI blogs.",
+    "Myself Akshay Ravikant, and this is my portfolio & tech blog. Along with latest updates in the tech industry, this also features my recent projects, and basic info for potential clients and employers.",
 };
 
 export default async function Home() {

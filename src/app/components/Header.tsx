@@ -23,11 +23,11 @@ function Header() {
         <h1>
           Akshay Ravikant
         </h1>
-        <p>AI & SaaS Developer</p>
+        <p>Full-Stack Developer</p>
       </div>
       </Link>
-      
-        <nav className="items-center flex gap-4 text-sm text-zinc-600 dark:text-zinc-500">
+
+        <nav className="items-end md:items-center flex flex-col md:flex-row gap-4 justify-between text-sm text-zinc-600 dark:text-zinc-500">
           <Link href="/projects" prefetch>Projects</Link>
           <Link href="/blog" prefetch>Blog</Link>
         </nav>

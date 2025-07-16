@@ -1,18 +1,9 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import { getPortfolioData } from '../../../../lib/getPortfolioData';
 import BackToPage from '@/app/components/snippets/BackToPage';
-
-// interface Project {
-//   id: number;
-//   title: string;
-//   category: string;
-//   description: string;
-//   techStack: string;
-//   liveUrl: string;
-//   image: string;
-// }
+import ImageWithSkeleton from '@/app/components/snippets/ImageWithSkeleton';
 
 export async function generateMetadata({
   params,
@@ -69,27 +60,32 @@ export default async function ProjectPage({
       <section>
       <BackToPage href="/projects" linkText="Back to Projects" />
         <div className="mb-6 overflow-hidden rounded-lg">
-          <Image
+          <ImageWithSkeleton
             src={project.image}
             alt={project.projectName}
             width={1200}
             height={630}
-            className="w-full h-auto object-cover"
-            loading="lazy"
+            className="w-full h-auto object-cover rounded-lg"
           />
         </div>
-        <h1 className="mb-4">{project.projectName}</h1>
-        <p>Category: {project.category}</p>
-        <p>Tech Stack: {project.techStack}</p>
-        <h4>Brief</h4>
-        <p className="mb-4">{project.description}</p>
-        <h4>Use Case</h4>
-        <p className="mb-4">{project.description}</p>
+        <div className="flex flex-col gap-1">
+          <h1 className="mb-4">{project.projectName}</h1>
+          <p>Category: {project.category}</p>
+          <p className="mb-4">Tech Stack: {project.techStack}</p>
+        </div>
+        <div className="flex flex-col gap-1">
+          <h4>Brief</h4>
+          <p className="mb-4">{project.description}</p>
+        </div>
+        <div className="flex flex-col gap-1">
+          <h4>Use Case</h4>
+          <p className="mb-4">{project.description}</p>
+        </div>
         <Link
           href={project.liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+          className="w-fit px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
         >
           Visit Live Site
         </Link>

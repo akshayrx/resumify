@@ -1,8 +1,10 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import { fetchPostBySlug } from '../../../lib/fetchBlogs';
 import Link from 'next/link';
 import BackToPage from '@/app/components/snippets/BackToPage';
 import { Metadata } from 'next';
+// import { Skeleton } from "@/components/ui/skeleton";
+import ImageWithSkeleton from '@/app/components/snippets/ImageWithSkeleton';
 
 export async function generateMetadata({
   params,
@@ -22,20 +24,19 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const post = await fetchPostBySlug(slug);
 
   return (
-    <main className="prose prose-gray prose-h4:prose-base dark:prose-invert prose-h1:text-xl prose-h1:font-medium prose-h2:mt-12 prose-h2:scroll-m-20 prose-h2:text-lg prose-h2:font-medium prose-h3:text-base prose-h3:font-medium prose-h4:font-medium prose-h5:text-base prose-h5:font-medium prose-h6:text-base prose-h6:font-medium prose-strong:font-medium">
+    <main className="gap-8 prose prose-gray prose-h4:prose-base dark:prose-invert prose-h1:text-xl prose-h1:font-medium prose-h2:mt-12 prose-h2:scroll-m-20 prose-h2:text-lg prose-h2:font-medium prose-h3:text-base prose-h3:font-medium prose-h4:font-medium prose-h5:text-base prose-h5:font-medium prose-h6:text-base prose-h6:font-medium prose-strong:font-medium">
       <section>
         <BackToPage href="/blog" linkText="Back to Blog" />
         <div className="mb-6 overflow-hidden rounded-lg gap-8 flex flex-col">
-          {post._embedded?.['wp:featuredmedia']?.[0]?.source_url && (
-            <Image
-              src={post._embedded['wp:featuredmedia'][0].source_url}
-              alt={post._embedded['wp:featuredmedia'][0].alt_text || post.title.rendered}
-              width={1200}
-              height={630}
-              className="w-full h-auto object-cover rounded-lg"
-              loading="lazy"
-            />
-          )}
+            {post._embedded?.['wp:featuredmedia']?.[0]?.source_url && (
+              <ImageWithSkeleton
+                src={post._embedded['wp:featuredmedia'][0].source_url}
+                alt={post._embedded['wp:featuredmedia'][0].alt_text || post.title.rendered}
+                width={1200}
+                height={630}
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            )}
           <h1
             className="text-3xl font-semibold tracking-tighter text-black dark:text-white"
             dangerouslySetInnerHTML={{ __html: post.title.rendered }}
@@ -62,7 +63,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         rel="noopener noreferrer"
         className="text-blue-500 dark:text-blue-300 mt-4 hidden"
       >
-        View on WordPress
+        View Original
       </Link>
 
     </main>

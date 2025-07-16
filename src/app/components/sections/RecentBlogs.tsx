@@ -33,7 +33,7 @@ export default function RecentBlogs({ limit = 3, showExcerpt = false }: RecentBl
     loadBlogs();
   }, [limit]); // Re-fetch if limit changes
 
-  if (loading) return <div>Loading blogs...</div>;
+  if (loading) return <div>Getting latest blogs...</div>;
   if (error) return <div>{error}</div>;
 
   return (

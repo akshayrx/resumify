@@ -1,6 +1,6 @@
 import { AboutMe } from "@/types/data";
 import Link from "next/link";
-// import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/badge";
 
 interface AboutProps {
     aboutMe: AboutMe;
@@ -10,7 +10,7 @@ export default function Connect({ aboutMe }: AboutProps) {
     return (
         <section className="px-4 mt-12">
             <h2>Connect</h2>
-            <p>Follow me on&nbsp;
+            {/* <p>Follow me on&nbsp;
                 <Link href={aboutMe.twitter} target="_blank" className="underline text-zinc-800 dark:text-zinc-400">
                     X
                 </Link>, view my code and open-source projects on&nbsp;
@@ -20,8 +20,14 @@ export default function Connect({ aboutMe }: AboutProps) {
                     LinkedIn
                 </Link>
                 &nbsp;profile, or email me at <Link href={`mailto:${aboutMe.email}`} className="underline text-zinc-800 dark:text-zinc-400">{aboutMe.email}</Link>.
+            </p> */}
+            <p>Follow me on <Link href={aboutMe.twitter}>
+                <Badge variant={"outline"}>X</Badge></Link>, view my code and open-source projects on <Link href={aboutMe.github}>
+                <Badge variant={"outline"}>Github</Badge></Link>, explore my <Link href={aboutMe.linkedin}>
+                <Badge variant={"outline"}>LinkedIn</Badge></Link> profile, or email me directly at <Link href={`mailto:${aboutMe.email}`}>
+                <Badge variant={"outline"}>{aboutMe.email}</Badge></Link>.
             </p>
-            {/* <p>Follow me on <Link href={aboutMe.twitter}><Badge>X</Badge></Link>, view my code and open-source projects on <Link href={aboutMe.github}><Badge>Github</Badge></Link>, explore my <Link href={aboutMe.linkedin}><Badge>LinkedIn</Badge></Link> profile, or email me directly at <Link href={`mailto:${aboutMe.email}`}>{aboutMe.email}</Link>.</p> */}
+            <small>Last updated on Wed 16 Jul 2025.</small>
         </section>
     );
 }
