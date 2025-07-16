@@ -61,9 +61,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         href={post.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-500 dark:text-blue-300 mt-4 hidden"
+        className="text-blue-500 dark:text-blue-300 mt-4"
       >
-        View Original
+        View Original Article
       </Link>
 
     </main>

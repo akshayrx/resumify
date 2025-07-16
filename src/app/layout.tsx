@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
@@ -70,21 +70,20 @@ export const metadata: Metadata = {
     images: ["https://akshay.ing/og-image.png"],
     site: "@akshayravikant",
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
-  ],
   category: "technology",
   metadataBase: new URL('https://akshay.ing'),
   // verification: {
   //   google: "verification_token", // Replace with your verification token if you have one
   // },
 }
+
+export const viewport: Viewport = {
+  // themeColor: META_THEME_COLORS.light,
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true
+};
 
 export default async function RootLayout({
   children,

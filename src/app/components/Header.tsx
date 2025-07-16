@@ -10,7 +10,7 @@ function Header() {
       <div>
         {/* profile picture here */}
         <Image
-          src="/akshay-ravikant.png"
+          src="/profile_akshayravikant.png"
           alt="Akshay Ravikant"
           priority={true}
           width={72}

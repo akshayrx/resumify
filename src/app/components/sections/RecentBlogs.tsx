@@ -14,7 +14,7 @@ interface RecentBlogsProps {
   showExcerpt?: boolean; // New prop to toggle excerpt
 }
 
-export default function RecentBlogs({ limit = 3, showExcerpt = false }: RecentBlogsProps) {
+export default function RecentBlogs({ limit = 5, showExcerpt = false }: RecentBlogsProps) {
   const [blogs, setBlogs] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -33,7 +33,7 @@ export default function RecentBlogs({ limit = 3, showExcerpt = false }: RecentBl
     loadBlogs();
   }, [limit]); // Re-fetch if limit changes
 
-  if (loading) return <div>Getting latest blogs...</div>;
+  if (loading) return <h2>Getting latest blogs...</h2>;
   if (error) return <div>{error}</div>;
 
   return (

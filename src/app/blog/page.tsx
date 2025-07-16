@@ -11,7 +11,7 @@ export default function BlogPage() {
     return (
         <main>
             {/* <h1>Recent Blog Posts</h1> */}
-            <RecentBlogs limit={12} showExcerpt={true} />
+            <RecentBlogs limit={50} showExcerpt={true} />
         </main>
     );
 }

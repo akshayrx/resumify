@@ -20,7 +20,7 @@ export interface BlogPost {
   };
   }
   
-  export async function fetchRecentBlogs(limit: number = 3): Promise<BlogPost[]> {
+  export async function fetchRecentBlogs(limit: number = 5): Promise<BlogPost[]> {
     const res = await fetch(`https://blog.akshay.ing/wp-json/wp/v2/posts?per_page=${limit}`, {
       cache: 'no-store', // fetches everytime on our page load, slightly delayed due to realtime api request to WP everytime, but guarantees fresh data
     });
